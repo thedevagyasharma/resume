@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Devagya Sharma} \\ \vspace{1pt}
+    \small 929-471-8185 $|$ \href{mailto:devagyasharma9@gmail.com}{\underline{devagyasharma9@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/devagyasharma}{\underline{linkedin.com/in/devagyasharma}} $|$
+    \href{https://devagyasharma.com}{\underline{devagyasharma.com}} \\
+    \vspace{2pt}
+    \small Ann Arbor, MI (Open to relocation)
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Design Engineer bridging UX and frontend architecture to build accessible, scalable design systems. Proven track record accelerating team velocity through component libraries, automation tools, and WCAG 2.1-compliant solutions.}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Web Designer}{Dec 2024 -- Dec 2025}
+      {DealerOn, Inc.}{Remote}
+      \resumeItemListStart
+        \resumeItem{Drove 10\% increase in leads and 9.6\% page views by migrating 200+ dealership websites to 95+ accessibility scores (WCAG 2.1 AA), improving from 70s-90s baseline}
+        \resumeItem{Accelerated team delivery by 50\% (1-2 to 3-4 pages/hour) by building reusable component library adopted by 10-15 designers across 5-80 person team}
+        \resumeItem{Reduced manual errors and improved team productivity through JavaScript automation suite enabling bulk CMS updates, code generation for 200+ page sites, and file organization}
+        \resumeItem{Implemented brand compliance across 500+ GM sites and separated multi-brand dealerships into distinct Chevrolet, Buick, GMC, and Cadillac digital experiences}
+        \resumeItem{Performed QA on 50+ projects, resolving responsive layouts and JavaScript conflicts before client handoff}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Product Designer}{Aug 2024 -- Mar 2025}
+      {Center for Societal Aspiration}{Part-time}
+      \resumeItemListStart
+        \resumeItem{Enabled faster design iterations and seamless Figma-to-code handoff by building WCAG 2.1-compliant design system with 20+ reusable components}
+        \resumeItem{Established design-to-development workflows as solo designer, onboarding and integrating 5 designers and engineers across volunteer team}
+        \resumeItem{Architected AI-driven platform delivering personalized support plans across 13 service categories through 2-step needs assessment}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Front-End Developer}{Feb 2024 -- May 2024}
+      {Michigan Medicine, Department of Learning Health Sciences}{Ann Arbor, MI}
+      \resumeItemListStart
+        \resumeItem{Projected 30\% training efficiency improvement by building Python dashboard in 4 weeks visualizing multimodal VR data (gaze tracking, heart rate, voice, actions) for healthcare educators}
+        \resumeItem{Designed accessible UI components with HTML, CSS, Bootstrap, and React for VR-based CPR training educators}
+        \resumeItem{Collaborated with biomedical engineer to transform raw VR sensor data into actionable training insights}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Michigan}{Ann Arbor, MI}
+      {Master of Science in Information, UX Research and Design}{Aug 2022 -- May 2024}
+    \resumeSubheading
+      {MIT World Peace University}{Pune, India}
+      {Bachelor of Technology in Computer Science and Engineering}{Jun 2018 -- Jun 2022}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Grid Overlay Chrome Extension} $|$ \emph{JavaScript, HTML, CSS, Chrome APIs} $|$ \href{https://github.com/yourusername/grid-overlay}{\underline{GitHub}}}{2025}
+          \resumeItemListStart
+            \resumeItem{Built Figma-style grid overlay tool with customizable columns, gutters, and breakpoints for responsive design verification}
+            \resumeItem{Implemented persistent preferences using localStorage and vanilla JavaScript}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Design \& Prototyping}{: Figma, Design Systems, Accessibility (WCAG 2.1), Wireframing, High-Fidelity Prototyping, Systems Thinking} \\
+     \textbf{Front-End Development}{: HTML5, CSS3, JavaScript, React, Responsive Design, Frontend Architecture} \\
+     \textbf{Research \& Collaboration}{: Usability Testing, User Journey Mapping, Stakeholder Management, Agile/Scrum, Cross-Functional Leadership} \\
+     \textbf{Tools}{: Git/GitHub, JIRA, Adobe Creative Suite, Browser DevTools}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
