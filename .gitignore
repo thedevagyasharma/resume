@@ -6,6 +6,14 @@
 *.synctex.gz
 *.fls
 *.fdb_latexmk
+*.nav
+*.snm
+*.vrb
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.xdv
 
 # OS files
 .DS_Store
